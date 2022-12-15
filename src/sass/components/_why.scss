@@ -1,3 +1,24 @@
 .why {
-  background-color: darkolivegreen;
+  background-color: $color-primary-cyan;
+  filter: brightness(1.1);
+
+  padding: 2.5rem;
+
+  &__heading {
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  &__list {
+    list-style: none;
+
+    li {
+      color: $color-neutral-light-gray;
+      margin-bottom: 0.1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

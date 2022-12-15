@@ -1,6 +1,33 @@
 .monthly {
-  background-color: #fff;
-  padding: 3rem;
-  border-radius: 3rem;
-  box-shadow: rgba($color: #000000, $alpha: 1);
+  background-color: $color-primary-cyan;
+  color: #fff;
+  padding: 2.5rem;
+
+  &__price {
+    font-size: 1rem;
+    color: $color-neutral-light-gray;
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    span {
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  &__access {
+    margin: 0.8rem 0 1.4rem 0;
+  }
+
+  &__signup {
+    background-color: $color-primary-yellow;
+    border: none;
+
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 6rem;
+    border-radius: 0.3rem;
+  }
 }

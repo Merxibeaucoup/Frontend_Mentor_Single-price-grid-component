@@ -1,10 +1,15 @@
 .join {
   background-color: #fff;
+  width: 100%;
 
   padding: 1rem 2.5rem 2.5rem 2.5rem;
 
   grid-column: 1 /-1;
   grid-row: 1/ 2;
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 40vh;
+  }
 
   &__heading {
     color: $color-primary-cyan;

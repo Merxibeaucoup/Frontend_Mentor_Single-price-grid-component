@@ -8,6 +8,10 @@ $color-primary-yellow: #c0df34;
 $color-neutral-light-gray: #e5eff5;
 $color-neutral-grayish-blue: rgb(152, 166, 189);
 
+// Responsive Breakpoints
+
+$bp-medium: 50rem; //800px
+
 *,
 *::before,
 *::after {
@@ -34,4 +38,11 @@ body {
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 0;
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    width: 100%;
+  }
 }
